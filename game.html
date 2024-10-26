@@ -12,22 +12,41 @@
   <div class="container">
     <div class="shift">
       <div class="container-user">
-        <h2>Usuario elije:</h2>
+        <h2>Usuario:</h2>
         <div class="buttons">
-          <button>Piedra</button>
-          <button>Papel</button>
-          <button>Tijera</button>
+          <button id="rock" type="button">
+            <img class="user-Select" src="assests/piedra.jfif" alt="Boton Imagen"  width="50" height="50">
+          </button>
+          <button id="paper">
+            <img class="user-Select" src="assests/mano.jfif" alt="Boton Imagen" width="50" height="50">
+          </button>
+          <button id="scissor">
+            <img class="user-Select" src="assests/tijera.jfif" alt="Boton Imagen" width="50" height="50">
+          </button>
         </div>
       </div>
       <div class="container-cpu">
-        <h2>Computadora elije:</h2>
-        <p>Aquí juega la cpu</p>
+        <h2>Computadora:</h2>
+        <div class="cpu-options">
+          <img class="user-Select" src="assests/CPU.jfif" alt="Boton Imagen"  width="50" height="50">
+        </div>
       </div>
     </div>
     <div class="container-result">
-      <p>user</p>
-      <p>cpu</p>
+      <img id="shift-user" src="assests/transparent-picture.png" width="100" height="100"></img>
+      <p>VS</p>
+      <img id="shift-cpu" src="assests/transparent-picture.png" width="100" height="100"></img>
     </div>    
+    <h2 id="result"> Que empiece el juego!!</h2>
+    <div class="markert">
+      <h2>Score :</h2>
+      <div class="counted">
+        <p id="point-user"><strong> 0</strong></p>
+          <p>-</p>
+        <p id="point-cpu"><strong> 0</strong></p>
+      </div>
+    </div>
   </div>
+  <script src="app.js"></script>
 </body>
 </html>
